@@ -1,5 +1,7 @@
 # JeevanJal Initiative - Clean Water Mission Website
 
+Live Link: https://l-t-charity-donation-project.vercel.app/
+
 ## OVERVIEW
 
 This is a modern, responsive website for JeevanJal Initiative, a non-profit organization dedicated to bringing clean water to rural communities in Maharashtra, India. Built using only HTML and CSS, the site features a vibrant, hope-inspiring design with a blue-teal-green color palette that represents water, life, and growth.
