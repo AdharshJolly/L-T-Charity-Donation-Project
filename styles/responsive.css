@@ -1,0 +1,340 @@
+/* Responsive Styles for All Pages */
+
+/* Desktop Styles (1025px and up) */
+@media (min-width: 1025px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+/* Tablet Styles (769px to 1024px) */
+@media (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .page-hero h1 {
+    font-size: 3rem;
+  }
+
+  .container {
+    padding: 0 30px;
+  }
+}
+
+/* Mobile Styles (481px to 768px) */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  /* Navigation */
+  .nav-links {
+    display: none;
+  }
+
+  /* Content Grid Layouts */
+  .about-content,
+  .section-content,
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  /* Grid Components */
+  .testimonials-grid,
+  .tiers-grid,
+  .projects-grid,
+  .stories-grid,
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Forms */
+  .form-container,
+  .contact-form {
+    padding: 40px 25px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Typography */
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .page-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .about h2,
+  .testimonials h2,
+  .donation-tiers h2,
+  .donation-form h2,
+  .how-it-works h2,
+  .impact-stats h2,
+  .success-stories h2,
+  .timeline-section h2,
+  .faq-section h2,
+  .current-focus h2 {
+    font-size: 2.5rem;
+  }
+
+  .section-text h2 {
+    font-size: 2.3rem;
+  }
+
+  /* Tabs */
+  .tabs {
+    gap: 15px;
+  }
+
+  .tab {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+
+  /* Timeline Mobile Adjustments */
+  .timeline::before {
+    left: 30px;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    margin-left: 70px;
+    margin-right: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: left;
+  }
+
+  .timeline-dot {
+    left: 30px;
+  }
+
+  /* Story Header Mobile */
+  .story-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+}
+
+/* Small Mobile Styles (320px to 480px) */
+@media (max-width: 480px) {
+  /* Typography */
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .page-hero h1 {
+    font-size: 2rem;
+  }
+
+  .about h2,
+  .testimonials h2,
+  .donation-tiers h2,
+  .donation-form h2,
+  .how-it-works h2,
+  .impact-stats h2,
+  .success-stories h2,
+  .timeline-section h2,
+  .faq-section h2,
+  .current-focus h2 {
+    font-size: 2rem;
+  }
+
+  .section-text h2 {
+    font-size: 1.8rem;
+  }
+
+  /* Buttons */
+  .cta-button {
+    padding: 15px 35px;
+    font-size: 1.1rem;
+  }
+
+  /* Stats */
+  .quick-stat-number {
+    font-size: 2.5rem;
+  }
+
+  /* Forms */
+  .form-container,
+  .contact-form {
+    padding: 30px 20px;
+  }
+}
+
+/* Large Mobile Landscape (481px to 640px) */
+@media (min-width: 481px) and (max-width: 640px) and (orientation: landscape) {
+  .hero {
+    height: 80vh;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Tablet Portrait (641px to 768px) */
+@media (min-width: 641px) and (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .page-hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Touch Device Adjustments */
+@media (hover: none) and (pointer: coarse) {
+  .stat-item:hover,
+  .team-member:hover,
+  .project-card:hover,
+  .testimonial:hover,
+  .story-card:hover,
+  .tier-card:hover,
+  .contact-method:hover,
+  .faq-item:hover {
+    transform: none;
+  }
+
+  .cta-button:hover,
+  .newsletter-button:hover,
+  .donate-button:hover,
+  .submit-button:hover,
+  .learn-more-btn:hover {
+    transform: none;
+  }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(0, 180, 216, 0.7),
+        rgba(6, 214, 160, 0.7)
+      ),
+      url("https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=3840&h=2160&fit=crop");
+  }
+}
+
+/* Print Media Styles */
+@media print {
+  /* Hide Interactive Elements */
+  .hero,
+  .page-hero,
+  nav,
+  .newsletter,
+  .donation-form,
+  footer,
+  .cta-button,
+  .newsletter-button,
+  .donate-button,
+  .submit-button,
+  .learn-more-btn {
+    display: none;
+  }
+
+  /* Adjust Typography for Print */
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+    color: #000;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    page-break-after: avoid;
+    color: #000;
+  }
+
+  /* Remove Containers */
+  .container {
+    max-width: none;
+    padding: 0;
+  }
+
+  /* Adjust Grids for Print */
+  .about-content,
+  .section-content,
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Simplify Cards */
+  .stat-card,
+  .team-member,
+  .project-card,
+  .testimonial,
+  .story-card,
+  .tier-card,
+  .contact-method,
+  .faq-item {
+    box-shadow: none;
+    border: 1px solid #ccc;
+    page-break-inside: avoid;
+  }
+}
+
+/* Accessibility - Reduce Motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  .hero::before,
+  .quick-stats::before,
+  .progress-section::before,
+  .current-focus::before,
+  .footer::before {
+    animation: none;
+  }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  .hero::before,
+  .page-hero::before,
+  .current-focus::before {
+    opacity: 0.9;
+  }
+
+  .stat-card,
+  .team-member,
+  .project-card,
+  .testimonial,
+  .story-card,
+  .tier-card,
+  .contact-method,
+  .faq-item {
+    border: 2px solid #03045e;
+  }
+}
+
+/* Dark Mode Support (if implemented) */
+@media (prefers-color-scheme: dark) {
+  /* This section can be expanded if dark mode is needed */
+}
